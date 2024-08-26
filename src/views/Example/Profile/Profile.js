@@ -16,7 +16,7 @@ class Profile extends React.Component{
                     <p><strong>Student ID:</strong> B21DCCN525</p>
                     <p><strong>Class:</strong> D21CQCN09-B</p>
                     <p><strong>Email:</strong> decade69125@gmail.com</p>
-                    <p><strong>Github:</strong> </p>
+                    <p><strong>Github:</strong> https://github.com/spmon/IOT-template </p>
                     </div>
                 </div>
             </div>
