@@ -1,5 +1,6 @@
 import React from "react";
-import './Profile.css'
+import './Profile.css';
+import { motion } from 'framer-motion';
 class Profile extends React.Component{
 
     render(){
@@ -12,11 +13,17 @@ class Profile extends React.Component{
                 </div>
                 <div className="right">
                     <div className="text1">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}  // Ban đầu ẩn và nằm dưới
+                        animate={{ opacity: 1, y: 0 }}   // Sau đó hiện lên và trở về vị trí ban đầu
+                        transition={{ duration: 1 }}     // Thời gian hiệu ứng
+                        >
                     <p><strong>Full Name:</strong> Nguyễn Chí Minh</p>
                     <p><strong>Student ID:</strong> B21DCCN525</p>
                     <p><strong>Class:</strong> D21CQCN09-B</p>
                     <p><strong>Email:</strong> decade69125@gmail.com</p>
-                    <p><strong>Github:</strong> https://github.com/spmon/IOT-template </p>
+                    <p><strong>Github:</strong> https://github.com/spmon/IOT-template</p>
+                    </motion.div>
                     </div>
                 </div>
             </div>
