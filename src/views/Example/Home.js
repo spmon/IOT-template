@@ -34,7 +34,7 @@ class Home extends React.Component {
       ],
     };
 
-    // Dữ liệu cho biểu đồ độ ẩm
+    
     const humidityData = {
       labels: ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00'],
       datasets: [
@@ -42,13 +42,13 @@ class Home extends React.Component {
           label: 'Humidity (%)',
           data: [55, 60, 65, 70, 75, 80, 85],
           fill: false,
-          backgroundColor: 'rgba(0, 94, 255, 0.468',
-          borderColor: 'rgba(0, 94, 255, 0.468',
+          backgroundColor: 'rgba(0, 94, 255, 0.468)',
+          borderColor: 'rgba(0, 94, 255, 0.468)',
         },
       ],
     };
 
-    // Dữ liệu cho biểu đồ ánh sáng
+    
     const lightData = {
       labels: ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00'],
       datasets: [
@@ -68,21 +68,23 @@ class Home extends React.Component {
         <div className="box1">
           <span className="text">Temperature</span>
           <div className="Icon"><FaTemperatureHigh /></div>
+          <div className='inform'>30°C</div>
         </div>
         <div className="box2">
           <span className="text">Humidity</span>
           <div className="Icon"><GiWaterDrop /></div>
+          <div className='inform1'>87%</div>
         </div>
         <div className="box3">
-          <span className="text">Light</span>
-          <div className="Icon"><CiSun /></div>
+          <span className="textL">Light</span>
+          <div className="IconL"><CiSun /></div>
+          <div className='inform2'>400 lux</div>
         </div>  
         
 
         
         <div className="Light">
           <span className="text">Light</span>
-          
           <div className="button">
             {showLight ? (
               <>
@@ -137,8 +139,8 @@ class Home extends React.Component {
       </div>
       <div className='chart'>
       <div className='chart1'>
-      <LineChart data={temperatureData} title="Temperature" />
-      <LineChart data={humidityData} title="Humidity"  /> 
+        <LineChart data={temperatureData} title="Temperature" />
+        <LineChart data={humidityData} title="Humidity"  /> 
         
 
       </div>
