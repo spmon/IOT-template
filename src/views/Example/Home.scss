@@ -1,3 +1,5 @@
+
+
 @keyframes wave {
   0% { transform: translateX(0); }
   50% { transform: translateX(10px); }
@@ -11,8 +13,9 @@
     background-color: rgba(246, 246, 246, 0.877);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
     display: flex;
-    justify-content: space-around;
-    
+    justify-content:space-around;
+    width: 98.5%;
+    height: 100%;
 }
   .box1 {
     width: 200px; /* Chiều rộng của box */
@@ -54,14 +57,17 @@
   .text{
     position: relative;
     top:-26px;
+    left: 30px;
     width: 120x;
     margin-right: 20px;
     color: black;
+    
 }
 .Icon{
     position: relative;
     top:-20px;
     font-size: 25px;
+    left: 30px;
     
 }
 .Light {
@@ -103,25 +109,25 @@
   }
   .Icon1{
     position: relative;
-    left: 30px;
+    left: 40px;
     top :-5px;
     color:yellow;
   }
   .Icon2{
     position: relative;
-    left: 30px;
+    left: 40px;
     top :-5px;
-    animation:rotate 0.1s linear infinite;
+    animation:rotate 0.4s linear infinite;
   }
   .Icon3{
     position: relative;
-    left: 30px;
+    left: 40px;
     top :-5px;
     animation: wave 1s ease-in-out infinite;
   }
   .Icon4{
     position: relative;
-    left: 30px;
+    left: 40px;
     top :-5px;
   }
 .button{
@@ -157,6 +163,39 @@
   justify-content: center;
 
 }
+.inform{
+  position: relative;
+  top:20px;
+  left: -90px;
+  font-size: 30px;
+}
+.inform1{
+  position: relative;
+  top:20px;
+  left: -70px;
+  font-size: 30px;
+}
+.inform2{
+  position: relative;
+  top:20px;
+  left: -50px;
+  font-size: 30px;
+}
+.textL{
+  position: relative;
+    top:-26px;
+    left: 60px;
+    width: 120x;
+    margin-right: 20px;
+    color: black;
+}
+.IconL{
+    position: relative;
+    top:-20px;
+    font-size: 25px;
+    left: 60px;
+}
+
 
 
 
