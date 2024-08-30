@@ -11,7 +11,7 @@
   
 .left {
     flex: 1; /* Chiếm 50% diện tích ngang */
-    background-image: url('https://portal.ptit.edu.vn/wp-content/uploads/2016/07/anh-truong.jpg'); /* Đường dẫn đến hình nền */
+    background-image: url('https://portal.ptit.edu.vn/wp-content/uploads/2018/12/tang-bac-2.jpg'); /* Đường dẫn đến hình nền */
     background-size: cover; /* Để hình nền bao phủ toàn bộ */
     background-position: center; /* Đặt hình nền ở giữa */
     display: flex;
@@ -40,6 +40,7 @@
     top:-10px;
     color:  aliceblue;
   }
+
   .profile-image {
     width: 250px;
     height: 250px;
