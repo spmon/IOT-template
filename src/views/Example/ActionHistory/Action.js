@@ -9,20 +9,20 @@ const Action=()=>{
     const [searchTerm, setSearchTerm] = useState('');
   
     const data = [
-      { id: 1, light: 'on', Fan: 'on', AC: 'on', time: '10:00' ,date:'23/8'},
-      { id: 2, light: 'on', Fan: 'off', AC: 'on', time: '9:00' ,date:'23/8'},
-      { id: 3, light: 'on', Fan: 'on', AC: 'on', time: '8:00' ,date:'23/8'},
-      { id: 4, light: 'off', Fan: 'on', AC: 'off', time: '7:00' ,date:'23/8'},
-      { id: 5, light: 'on', Fan: 'on', AC: 'on', time: '6:00' ,date:'23/8'},
-      { id: 6, light: 'on', Fan: 'off', AC: 'off', time: '5:00' ,date:'23/8'},
-      { id: 7, light: 'off', Fan: 'off', AC: 'off', time: '4:00' ,date:'23/8'},
+      { id: 1, device:'Light',Action:'off',  time: '10:00' ,date:'23/8'},
+      { id: 2, device:'Light',Action:'on',  time: '9:00' ,date:'23/8'},
+      { id: 3, device:'Fan',Action:'off',  time: '8:00' ,date:'23/8'},
+      { id: 4, device:'Fan',Action:'on',  time: '7:00' ,date:'23/8'},
+      { id: 5, device:'AC',Action:'on',  time: '6:00' ,date:'23/8'},
+      { id: 6, device:'AC',Action:'off',  time: '5:00' ,date:'23/8'},
+      { id: 7, device:'AC',Action:'on',  time: '4:00' ,date:'23/8'},
     ];
   
     const columns = useMemo(() => [
       { Header: 'ID', accessor: 'id' },
-      { Header: 'Light', accessor: 'light' },
-      { Header: 'Fan', accessor: 'Fan' },
-      { Header: 'AC', accessor: 'AC' },
+      { Header: 'Device', accessor: 'device' },
+      { Header: 'Action', accessor: 'Action' },
+      
       { Header: 'Time', accessor: 'time' },
       {Header:'Date',accessor:'date'}
     ], []);
